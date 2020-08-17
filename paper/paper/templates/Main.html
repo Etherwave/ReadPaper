@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>论文阅读</title>
+    <link rel="stylesheet" href="/static/css/Main.css">
+    <link rel="shortcut icon" href="/static/images/Paper.ico"/>
+</head>
+<body>
+    <div class="top_title">
+        <h1>
+            论文阅读
+        </h1>
+    </div>
+    <section>
+        <div class="card">
+            <a href="/EditeProject/">
+                <img src="/static/images/plugs.png" alt="">
+            </a>
+        </div>
+        {% for Project in Projects %}
+            <div class="card">
+                <div class="box">
+                    <div class="imgBx">
+                         <h1>{{ Project.Project_Name }}</h1>
+                    </div>
+                    <div class="contentBx" onclick="window.location.href='{{Project.url}}'">
+                        <div>
+                            <h2>{{ Project.Project_Name }}</h2>
+                            <p>{{ Project.Abstract }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+</body>
+</html>

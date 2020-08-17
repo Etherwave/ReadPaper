@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>论文阅读</title>
+    <link rel="shortcut icon" href="/static/images/Paper.ico"/>
+    <link rel="stylesheet" href="/static/css/markdown.css">
+    <link rel="stylesheet" href="/static/css/Paper.css">
+</head>
+<body>
+    <div class="Project_Name">
+        <h1>
+            <a href="/Project/{{ paper.Project_Name_encode }}/">
+                {{ paper.Project_Name }}
+            </a>
+        </h1>
+    </div>
+    <div class="Paper_Name">
+        <h2>
+            <a href="/EditePaper/{{ paper.Project_Name_encode }}/{{ paper.Paper_Name_encode }}">
+                {{ paper.Paper_Name }}
+            </a>
+        </h2>
+    </div>
+    <div class="Abstract">
+        {{ paper.Abstract | safe }}
+    </div>
+    <div class="toc.left">
+        <span>文章目录</span>
+        <ul>  {{ toc|safe }} </ul>
+    </div>
+    <div class="foot">
+        <h3>Etherwave's Blog   Hi~ o(*￣▽￣*)ブ</h3>
+    </div>
+</body>
+</html>
