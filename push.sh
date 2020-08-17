@@ -1,3 +1,3 @@
 git add .
-git commit -m "new"
+git commit -m "add ico remove print"
 git push
