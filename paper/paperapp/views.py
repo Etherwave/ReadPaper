@@ -10,6 +10,7 @@ from urllib import parse
 from paper.functions.ProjectPaperDefine import *
 from paper.functions.funtion import base32decode, base32encode
 
+
 # Create your views here.
 
 def Main(request):
