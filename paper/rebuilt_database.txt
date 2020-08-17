@@ -1,0 +1,9 @@
+drop database paper;
+
+create database paper character set utf8mb4;
+
+use paper
+
+create table Project(Project_Name char(255) not null, Abstract text, primary key (Project_Name));
+
+create table Paper(Project_Name char(255) not null, Paper_Name char(255) not null, Abstract text, primary key (Paper_Name), FOREIGN KEY (Project_Name) REFERENCES Project(Project_Name));

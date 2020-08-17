@@ -1,0 +1,29 @@
+<body id="background">
+    <form action="/EditePaper/" method="post">
+        {% csrf_token %}
+        <div>
+            <div style="text-align: center">
+                <h2>论文所属的项目: {{ Project_Name }}</h2>
+                <input name="Project_Name" type="hidden" value= {{ Project_Name }}>
+                <input type="text" name="Paper_Name" class="my_input" placeholder="论文题目" value="{{ Paper_Name }}">
+                <input class="my_button" type="submit" value="提交"></input>
+                {% if write_method == 'edit_old_Paper' %}
+                    <input name="delete_submit" class="my_delete_button" type="submit" value="删除这篇论文">
+                {% endif %}
+            </div>
+            <br><br>
+            <div style="text-align: center; font-size: 20px">
+                {% if message %}
+                    <h3>{{ message }}</h3>
+                {% endif %}
+                {% if new_Paper_Url %}
+                    <label><a href="{{ new_Paper_Url }}">查看新文章：{{ new_Paper_Name }}</a></label>
+                {% endif %}
+            </div>
+            <br><br>
+        </div>
+        <div id="test-editormd">
+            <textarea name="Abstract" style="display:none;">{{ Abstract }}</textarea>
+        </div>
+    </form>
+</body>

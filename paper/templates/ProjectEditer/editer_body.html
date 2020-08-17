@@ -1,0 +1,27 @@
+<body id="background">
+    <form action="/EditeProject/" method="post">
+        {% csrf_token %}
+        <div>
+            <div style="text-align: center">
+                <input type="text" name="Project_Name" class="my_input" placeholder="项目名称" value="{{ Project_Name }}">
+                <input class="my_button" type="submit" value="提交"></input>
+                {% if write_method == 'edit_old_project' %}
+                    <input name="delete_submit" class="my_delete_button" type="submit" value="删除这个项目">
+                {% endif %}
+            </div>
+            <br><br>
+            <div style="text-align: center; font-size: 20px">
+                {% if message %}
+                    <h3>{{ message }}</h3>
+                {% endif %}
+                {% if new_Project_Url %}
+                    <label><a href="{{ new_Project_Url }}">查看新项目：{{ new_Project_Name }}</a></label>
+                {% endif %}
+            </div>
+            <br><br>
+        </div>
+        <div id="test-editormd">
+            <textarea name="Abstract" style="display:none;">{{ Abstract }}</textarea>
+        </div>
+    </form>
+</body>

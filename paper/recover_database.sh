@@ -1,0 +1,1 @@
+mysql -u root –password=123456 < paper.sql
