@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="/static/images/Paper.ico"/>
     <link rel="stylesheet" href="/static/css/markdown.css">
     <link rel="stylesheet" href="/static/css/Paper.css">
+    <link rel="stylesheet" href="/static/css/Sidebar.css">
 </head>
 <body>
     <div class="Project_Name">
@@ -25,12 +26,20 @@
     <div class="Abstract">
         {{ paper.Abstract | safe }}
     </div>
-    <div class="toc.left">
-        <span>文章目录</span>
-        <ul>  {{ toc|safe }} </ul>
+    <div class="MySidebar">
+        <div class="left_box">
+            <div class="left_button"></div>
+        </div>
+        <div class="right_box">
+            <span>文章目录</span>
+            <ul>  {{ toc|safe }} </ul>
+        </div>
     </div>
     <div class="foot">
         <h3>Etherwave's Blog   Hi~ o(*￣▽￣*)ブ</h3>
     </div>
 </body>
+<script src="/static/js/jquery.min.js"></script>
+{#<script src="/static/js/jquery-2.1.3.min.js"></script>#}
+<script src="/static/js/Sidebar.js"></script>
 </html>

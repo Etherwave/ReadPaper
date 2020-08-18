@@ -26,9 +26,12 @@
         <div class="right_box">
             <span>文章目录</span>
             <ul>  {{ toc|safe }} </ul>
-        </div>>
+        </div>
     </div>
     <div class="PaperPlugs">
+        <br>
+        <br>
+        <br>
         <a href="/EditePaper/">
             <img src="/static/images/plugs2.png" width="32" height="32">
         </a>
@@ -36,6 +39,7 @@
     <div class="Papers">
         {% for paper in papers %}
             <a href="{{ paper.url }}">{{ paper.Paper_Name }}</a>
+            <br>
         {% endfor %}
     </div>
     <div class="foot">

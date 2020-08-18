@@ -1,3 +1,3 @@
 git add .
-git commit -m "refine sidebar toc"
+git commit -m "refine paper sidebar toc"
 git push
