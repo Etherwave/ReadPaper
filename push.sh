@@ -1,3 +1,3 @@
 git add .
-git commit -m "add ico remove print"
+git commit -m "refine sidebar toc"
 git push

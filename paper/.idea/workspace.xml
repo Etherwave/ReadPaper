@@ -2,25 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0355860f-40c4-4194-9996-c60e6f3c4f45" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/jsLinters/jshint.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/paper.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/paperapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/paperapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/Project.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/Project.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/project.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Project.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Project.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1gE8PxmrUlbd9GMmVtsXxFYo2kr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,6 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunManager">
     <configuration name="paper" type="Python.DjangoServer" factoryName="Django server">
@@ -68,6 +76,8 @@
       <updated>1597668371083</updated>
       <workItem from="1597668373317" duration="35000" />
       <workItem from="1597668547844" duration="52000" />
+      <workItem from="1597668702511" duration="68000" />
+      <workItem from="1597711475644" duration="6957000" />
     </task>
     <servers />
   </component>
@@ -75,25 +85,29 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="216" y="139" key="#JSHint" timestamp="1597720239758">
+      <screen x="0" y="0" width="1280" height="1024" />
+    </state>
+    <state x="216" y="139" key="#JSHint/0.0.1280.1024@0.0.1280.1024" timestamp="1597720239758" />
     <state x="94" y="166" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597668563920">
       <screen x="0" y="0" width="1280" height="1024" />
     </state>
     <state x="94" y="166" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.1024@0.0.1280.1024" timestamp="1597668563920" />
-    <state width="1237" height="276" key="GridCell.Tab.0.bottom" timestamp="1597668599566">
+    <state width="1237" height="276" key="GridCell.Tab.0.bottom" timestamp="1597726376005">
       <screen x="0" y="0" width="1280" height="1024" />
     </state>
-    <state width="1237" height="276" key="GridCell.Tab.0.bottom/0.0.1280.1024@0.0.1280.1024" timestamp="1597668599566" />
-    <state width="1237" height="276" key="GridCell.Tab.0.center" timestamp="1597668599566">
+    <state width="1237" height="276" key="GridCell.Tab.0.bottom/0.0.1280.1024@0.0.1280.1024" timestamp="1597726376005" />
+    <state width="1237" height="276" key="GridCell.Tab.0.center" timestamp="1597726376005">
       <screen x="0" y="0" width="1280" height="1024" />
     </state>
-    <state width="1237" height="276" key="GridCell.Tab.0.center/0.0.1280.1024@0.0.1280.1024" timestamp="1597668599566" />
-    <state width="1237" height="276" key="GridCell.Tab.0.left" timestamp="1597668599566">
+    <state width="1237" height="276" key="GridCell.Tab.0.center/0.0.1280.1024@0.0.1280.1024" timestamp="1597726376005" />
+    <state width="1237" height="276" key="GridCell.Tab.0.left" timestamp="1597726376005">
       <screen x="0" y="0" width="1280" height="1024" />
     </state>
-    <state width="1237" height="276" key="GridCell.Tab.0.left/0.0.1280.1024@0.0.1280.1024" timestamp="1597668599566" />
-    <state width="1237" height="276" key="GridCell.Tab.0.right" timestamp="1597668599566">
+    <state width="1237" height="276" key="GridCell.Tab.0.left/0.0.1280.1024@0.0.1280.1024" timestamp="1597726376005" />
+    <state width="1237" height="276" key="GridCell.Tab.0.right" timestamp="1597726376005">
       <screen x="0" y="0" width="1280" height="1024" />
     </state>
-    <state width="1237" height="276" key="GridCell.Tab.0.right/0.0.1280.1024@0.0.1280.1024" timestamp="1597668599566" />
+    <state width="1237" height="276" key="GridCell.Tab.0.right/0.0.1280.1024@0.0.1280.1024" timestamp="1597726376005" />
   </component>
 </project>
