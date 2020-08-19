@@ -77,9 +77,10 @@ def update_Project(old_Project_Name, Project_Name, Abstract):
 
 def update_Paper(Project_Name, old_Paper_Name, Paper_Name, Abstract):
     sql = "update Paper " \
-          "set Paper.Paper_Name = '{0}', Paper.Abstract = '{1}' " \
-          "where Paper.Project_Name = '{2}' and Paper.Paper_Name= '{3}';".\
+          "set Paper_Name = '{0}', Abstract = '{1}' " \
+          "where Project_Name = '{2}' and Paper_Name= '{3}';".\
         format(Paper_Name, Abstract, Project_Name, old_Paper_Name)
+    print(sql)
     sql_opeartor().execute(sql)
 
 def delete_Project(Project_Name=''):

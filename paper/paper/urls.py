@@ -28,6 +28,7 @@ urlpatterns = [
     path('EditeProject/', views.EditeProject),
     path('EditePaper/<str:Project_Name_encode>/<str:Paper_Name_encode>/', views.EditePaper),
     path('EditePaper/', views.EditePaper),
+    path('uploads/', views.Paper_Img_Upload),
 ]
 
 

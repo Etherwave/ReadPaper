@@ -9,6 +9,7 @@ from django.shortcuts import redirect
 from urllib import parse
 from paper.functions.ProjectPaperDefine import *
 from paper.functions.funtion import base32decode, base32encode
+from paper import settings
 
 
 # Create your views here.
@@ -68,8 +69,8 @@ def EditeProject(request, Project_Name_encode=""):
     last_url_splited = referer.split("/")
     check_project = last_url_splited[-3]
     if check_project=="Project":
-        old_Project_Name_encode = last_url_splited[-2]
-        old_Project_Name = base32decode(old_Project_Name_encode)
+        old_Project_Name_encode = parse.unquote(last_url_splited[-2])
+        old_Project_Name = base32decode(parse.unquote(old_Project_Name_encode))
     else:
         old_Project_Name_encode = ""
         old_Project_Name = ""
@@ -80,7 +81,7 @@ def EditeProject(request, Project_Name_encode=""):
         Project_Name_encode = base32encode(Project_Name)
         Abstract = request.POST['Abstract']
         if check_project == "EditeProject":
-            old_Project_Name_encode = last_url_splited[-2]
+            old_Project_Name_encode = parse.unquote(last_url_splited[-2])
             old_Project_Name = base32decode(old_Project_Name_encode)
         else:
             old_Project_Name_encode = ""
@@ -152,9 +153,9 @@ def EditePaper(request, Project_Name_encode="", Paper_Name_encode=""):
         last_url_splited = referer.split("/")
         check_project = last_url_splited[-4]
         if check_project == "EditePaper":
-            old_Project_Name_encode = last_url_splited[-3]
+            old_Project_Name_encode = parse.unquote(last_url_splited[-3])
             old_Project_Name = base32decode(old_Project_Name_encode)
-            old_Paper_Name_encode = last_url_splited[-2]
+            old_Paper_Name_encode = parse.unquote(last_url_splited[-2])
             old_Paper_Name = base32decode(old_Paper_Name_encode)
         else:
             old_Project_Name_encode = ""
@@ -219,7 +220,7 @@ def EditePaper(request, Project_Name_encode="", Paper_Name_encode=""):
         check_project = last_url_splited[-3]
         if check_project == "Project":
             try:
-                old_Project_Name_encode = last_url_splited[-2]
+                old_Project_Name_encode = parse.unquote(last_url_splited[-2])
             except:
                 old_Project_Name_encode = ""
             old_Project_Name = base32decode(old_Project_Name_encode)
@@ -230,6 +231,45 @@ def EditePaper(request, Project_Name_encode="", Paper_Name_encode=""):
         context.update(add_context)
     context.update(write_method_context)
     return render(request, "PaperEditer/PaperEditer.html", context)
+
+# 写博客上传图片
+def Paper_Img_Upload(request):
+    if request.method == "POST":
+        data = request.FILES['editormd-image-file']
+        img = Image.open(data)
+        # width = img.width
+        # height = img.height
+        # rate = 1.0  # 压缩率
+        #
+        # # 根据图像大小设置压缩率
+        # if width >= 2000 or height >= 2000:
+        #     rate = 0.3
+        # elif width >= 1000 or height >= 1000:
+        #     rate = 0.5
+        # elif width >= 500 or height >= 500:
+        #     rate = 0.9
+        #
+        # width = int(width * rate)  # 新的宽
+        # height = int(height * rate)  # 新的高
+        #
+        # img.thumbnail((width, height), Image.ANTIALIAS)  # 生成缩略图
+
+        name = settings.BASE_DIR + '/static/uploads/' + data.name
+        while os.path.exists(name):
+            file, ext = os.path.splitext(data.name)
+            file = file + str(random.randint(1, 1000))
+            data.name = file + ext
+            name = settings.BASE_DIR + '/static/uploads/' + data.name
+        try:
+            img.save(name)
+            url = '/static'+name.split('static')[-1]
+            # result = {'success': 1, 'message': '成功', 'url': url}
+            # return HttpResponse(json.dumps(result, ensure_ascii=False), content_type="application/json,charset=utf-8")
+            return JsonResponse({'success': 1, 'message': '成功', 'url': url})
+        except Exception as e:
+            return JsonResponse({'success': 0, 'message': '上传失败'})
+
+    return render(request, "main.html")
 
 def page_not_found(request, exception=''):
     return render(request, "404.html")
