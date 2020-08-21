@@ -1,3 +1,3 @@
 git add .
-git commit -m "modify the setting to ensure upload image function"
+git commit -m "repair delete paper button"
 git push

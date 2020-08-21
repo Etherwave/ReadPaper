@@ -204,7 +204,7 @@ def EditePaper(request, Project_Name_encode="", Paper_Name_encode=""):
     # 所以我们加一个判断，看看他是不是从正常位置过来的
     # 如果有Project_Name和Paper_Name说明是修改老论文，否则是创建新论文
     if exist_Paper(Project_Name_encode, Paper_Name_encode) == True:
-        write_method_context['write_method'] = 'edit_old_paper'
+        write_method_context['write_method'] = 'edit_old_Paper'
         add_context = {
             'Project_Name': Project_Name,
             'Paper_Name': Paper_Name,
