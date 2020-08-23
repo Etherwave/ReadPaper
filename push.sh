@@ -1,3 +1,3 @@
 git add .
-git commit -m "repair delete paper button"
+git commit -m "add Project js for open all paper up function"
 git push
