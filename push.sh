@@ -1,3 +1,3 @@
 git add .
-git commit -m "edite foot text"
+git commit -m "add sidebar length"
 git push
