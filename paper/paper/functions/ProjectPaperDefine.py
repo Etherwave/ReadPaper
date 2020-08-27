@@ -80,7 +80,6 @@ def update_Paper(Project_Name, old_Paper_Name, Paper_Name, Abstract):
           "set Paper_Name = '{0}', Abstract = '{1}' " \
           "where Project_Name = '{2}' and Paper_Name= '{3}';".\
         format(Paper_Name, Abstract, Project_Name, old_Paper_Name)
-    print(sql)
     sql_opeartor().execute(sql)
 
 def delete_Project(Project_Name=''):

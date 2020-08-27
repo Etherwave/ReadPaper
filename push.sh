@@ -1,3 +1,3 @@
 git add .
-git commit -m "add sidebar length"
+git commit -m "add markdown js"
 git push
