@@ -83,6 +83,8 @@ def update_Paper(Project_Name, old_Paper_Name, Paper_Name, Abstract):
     sql_opeartor().execute(sql)
 
 def delete_Project(Project_Name=''):
+    sql = "delete from Paper where Project_Name='{0}';".format(Project_Name)
+    sql_opeartor().execute(sql)
     sql = "delete from Project where Project_Name='{0}';".format(Project_Name)
     sql_opeartor().execute(sql)
 

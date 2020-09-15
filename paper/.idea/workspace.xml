@@ -4,8 +4,6 @@
     <list default="true" id="0355860f-40c4-4194-9996-c60e6f3c4f45" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paper/functions/ProjectPaperDefine.py" beforeDir="false" afterPath="$PROJECT_DIR$/paper/functions/ProjectPaperDefine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Paper.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Paper.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Project.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Project.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +85,7 @@
       <workItem from="1598343901389" duration="724000" />
       <workItem from="1598406681118" duration="53000" />
       <workItem from="1598510117317" duration="570000" />
+      <workItem from="1600182045932" duration="256000" />
     </task>
     <servers />
   </component>

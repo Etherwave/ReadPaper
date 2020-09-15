@@ -1,3 +1,3 @@
 git add .
-git commit -m "add markdown js"
+git commit -m "repair delete Project function "
 git push
