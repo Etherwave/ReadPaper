@@ -37,6 +37,7 @@ def Project(request, Project_Name_encode=""):
             'markdown.extensions.toc',
         ],
     )
+    project.Abstract = project.Abstract.replace("\\", "\\\\")
     project.Abstract = md.convert(project.Abstract)
     context = {"project": project, "papers": papers, "toc": md.toc}
     return render(request, "Project.html", context)
@@ -55,6 +56,7 @@ def Paper(request, Project_Name_encode, Paper_Name_encode):
             'markdown.extensions.toc',
         ],
     )
+    paper.Abstract = paper.Abstract.replace("\\", "\\\\")
     paper.Abstract = md.convert(paper.Abstract)
     context = {"paper": paper, "toc": md.toc}
     return render(request, "Paper.html", context)
