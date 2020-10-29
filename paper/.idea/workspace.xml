@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0355860f-40c4-4194-9996-c60e6f3c4f45" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../get_the_latest_version.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/paper/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paper/functions/funtion.py" beforeDir="false" afterPath="$PROJECT_DIR$/paper/functions/funtion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paperapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/paperapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/editor.md-master/css/editormd.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/editor.md-master/css/editormd.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/MathJax.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/MathJax.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Paper.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Paper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/PaperEditer/editer_head.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/PaperEditer/editer_head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Project.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Project.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ProjectEditer/editer_head.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ProjectEditer/editer_head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pull.sh" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +98,8 @@
       <workItem from="1601604041705" duration="1420000" />
       <workItem from="1601606520360" duration="1306000" />
       <workItem from="1601616084783" duration="579000" />
+      <workItem from="1603974086117" duration="185000" />
+      <workItem from="1603974300654" duration="391000" />
     </task>
     <servers />
   </component>

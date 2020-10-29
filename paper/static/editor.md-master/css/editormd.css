@@ -4613,7 +4613,12 @@ hr.editormd-page-break {
 }
 
 #background {
-    background-color: #7D8B99;
+       /*background-color: #7D8B99;*/
+    background-image: url("/static/images/blog_background.jpg");
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .my_input{

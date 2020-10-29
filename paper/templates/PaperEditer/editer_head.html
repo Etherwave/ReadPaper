@@ -11,10 +11,11 @@
     <script>
         var testEditor;
         $(function () {
+            editer_height = document.documentElement.clientHeight*0.85;
             $.get("/static/editor.md-master/examples/empty.md", function (md) {
                 testEditor = editormd("test-editormd", {
                     width: "98%",
-                    height: 730,
+                    height: editer_height,
                     path: '/static/editor.md-master/lib/',
                     markdown: md,
                     codeFold: true,

@@ -8,7 +8,7 @@ from django.http import JsonResponse
 from django.shortcuts import redirect
 from urllib import parse
 from paper.functions.ProjectPaperDefine import *
-from paper.functions.funtion import base32decode, base32encode
+from paper.functions.funtion import base32decode, base32encode, fix_formula_backslash
 from paper import settings
 
 
@@ -37,8 +37,8 @@ def Project(request, Project_Name_encode=""):
             'markdown.extensions.toc',
         ],
     )
-    project.Abstract = project.Abstract.replace("\\", "\\\\")
     project.Abstract = md.convert(project.Abstract)
+    project.Abstract = fix_formula_backslash(project.Abstract)
     context = {"project": project, "papers": papers, "toc": md.toc}
     return render(request, "Project.html", context)
 
@@ -56,8 +56,8 @@ def Paper(request, Project_Name_encode, Paper_Name_encode):
             'markdown.extensions.toc',
         ],
     )
-    paper.Abstract = paper.Abstract.replace("\\", "\\\\")
     paper.Abstract = md.convert(paper.Abstract)
+    paper.Abstract = fix_formula_backslash(paper.Abstract)
     context = {"paper": paper, "toc": md.toc}
     return render(request, "Paper.html", context)
 
